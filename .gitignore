@@ -1,6 +1,16 @@
-# Local artifacts
-__pycache__/
-*.pyc
-.venv/
+# Local development / generated artifacts
 .DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+outputs/
+*.log
 .env
+.env.*
+!.env.example
+*.pem
+*.key

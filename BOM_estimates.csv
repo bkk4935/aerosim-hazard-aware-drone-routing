@@ -1,0 +1,9 @@
+component,mass_kg_scenario,cost_gbp_low,cost_gbp_high,basis_or_caveat
+Airframe/propulsion/autopilot/telemetry kit,0.97,645,745,X500 V2 + Pixhawk 6C class; combined mass provisional
+"4S 5000 mAh LiPo battery, nominal 74 Wh",0.49,45,80,4S 14.8 V × 5 Ah; pack mass indicative
+"Raspberry Pi, camera, power regulator",0.11,95,180,Onboard image processing; USB/CSI mounting
+2D navigation LiDAR,0.11,60,110,RPLIDAR C1 class; range and weight check
+Downward rangefinder,0.02,49,75,TFmini Plus class for floor clearance
+Educational radiation module,0.1,100,250,Not calibrated occupational instrumentation
+Optional optical particulate-matter sensor,0.04,25,80,Not a radionuclide discriminator
+"Protective cage, brackets, cabling",0.13,60,170,Requires mechanical/contamination testing

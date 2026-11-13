@@ -1,0 +1,70 @@
+{
+  "energy": {
+    "rows": 11623,
+    "train_flights": 31,
+    "heldout_flights": 11,
+    "test_rows": 3056,
+    "test_MAE_W": 12.26,
+    "test_RMSE_W": 16.76,
+    "test_R2": 0.741,
+    "baseline_uav_median_MAE_W": 26.82,
+    "test_absolute_error_q90_W": 25.18,
+    "alt_range_m": [
+      2.86,
+      40.74
+    ],
+    "wind_range_m_s": [
+      0.0,
+      13.83
+    ],
+    "flight_grouped_holdout": true,
+    "training_targets": "measured_voltage_times_current",
+    "fit_scope": "Three AMOVFLY UAV airframes; not validated for another drone or near-wall indoor flight",
+    "demo_model_refit_all_flights": true
+  },
+  "jia_wind_tunnel": {
+    "rows": 405,
+    "soils": 7,
+    "train_soils": [
+      "damao",
+      "dengkou",
+      "guyang",
+      "wuyuan"
+    ],
+    "heldout_soils": [
+      "linhe",
+      "wuchuan",
+      "wulate"
+    ],
+    "test_MAE_g_m3": 8.854,
+    "test_R2": 0.491,
+    "global_median_baseline_MAE_g_m3": 11.256,
+    "measured_wind_range_m_s": [
+      8.0,
+      14.0
+    ],
+    "test_log_MAE": 0.668,
+    "note": "Wind-tunnel concentration on tested farmland soils; no relation calibrated to a drone rotor wake"
+  },
+  "bristol_morphology": {
+    "n_particles": 109,
+    "resuspended_Y": 21,
+    "within_sample_cv_brier": 0.17,
+    "within_sample_cv_balanced_accuracy": 0.733,
+    "dummy_most_frequent_balanced_accuracy": 0.5,
+    "cross_figure": [
+      {
+        "heldout_figure": "Figure 11.csv",
+        "n": 72,
+        "brier": 0.3
+      },
+      {
+        "heldout_figure": "Figure 12.csv",
+        "n": 37,
+        "brier": 0.121
+      }
+    ],
+    "note": "Conditional morphology classification; no rotor speed/surface shear input, NOT a rotor-induced emission law"
+  },
+  "train_note": "Imputed radionuclide and conditional scenario values excluded from supervised labels. Radioactive activity used as scenario multiplier only."
+}
